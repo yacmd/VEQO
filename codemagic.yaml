@@ -1,6 +1,6 @@
 workflows:
   veqo-android-debug:
-    name: VEQO Android Debug APK
+    name: VEQO Android Release APK
     instance_type: mac_mini_m2
     max_build_duration: 60
 
@@ -20,10 +20,10 @@ workflows:
         script: |
           CI=1 npx expo prebuild --platform android
 
-      - name: Build Android debug APK
+      - name: Build Android Release APK
         script: |
           cd android
           ./gradlew assembleRelease
 
     artifacts:
-  - android/app/build/outputs/apk/release/*.apk
+      - android/app/build/outputs/apk/release/*.apk
