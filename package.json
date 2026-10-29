@@ -2,7 +2,7 @@
   "name": "veqo",
   "version": "1.0.0",
   "private": true,
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "expo/AppEntry",
   "scripts": {
     "start": "expo start",
     "dev": "expo start",
@@ -13,14 +13,16 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@expo/vector-icons": "^14.0.4",
-    "expo": "~52.0.0",
-    "expo-status-bar": "~2.0.0",
-    "react": "18.3.1",
-    "react-native": "0.76.5"
+    "@expo/vector-icons": "14.1.0",
+    "expo": "~53.0.27",
+    "expo-asset": "~11.1.7",
+    "expo-font": "~13.3.2",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-native": "0.79.6"
   },
   "devDependencies": {
-    "@types/react": "~18.3.12",
-    "typescript": "~5.3.3"
+    "@types/react": "~19.0.10",
+    "typescript": "~5.8.3"
   }
 }
