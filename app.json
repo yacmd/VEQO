@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "VEQO",
+    "slug": "veqo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "scheme": "veqo",
+    "newArchEnabled": true,
+    "icon": "./assets/veqo-icon.png",
+    "android": {
+      "package": "com.veqo.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/veqo-icon.png",
+        "backgroundColor": "#0B0B0D"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.veqo.app",
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
