@@ -3,18 +3,27 @@ workflows:
     name: VEQO Android Debug APK
     instance_type: mac_mini_m2
     max_build_duration: 60
+
     environment:
       node: 20.18.0
+
     scripts:
       - name: Install dependencies
         script: |
           npm install
+
+      - name: Align Expo dependencies
+        script: |
+          npx expo install --fix
+
       - name: Generate Android project
         script: |
           CI=1 npx expo prebuild --platform android
+
       - name: Build Android debug APK
         script: |
           cd android
           ./gradlew assembleDebug
+
     artifacts:
       - android/app/build/outputs/apk/debug/*.apk
